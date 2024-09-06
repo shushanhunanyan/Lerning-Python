@@ -10,6 +10,12 @@ def operations(a, b, op):
         print("Invalid operation")
 
 
+def calc(op, x, y):
+    return {
+            '+': lambda: x + y,
+            '-': lambda: x - y
+            }.get(op) ()
+
 
 # 2. Implement a Fibonacci Sequence Generator.
 def fibonacci_generator():
